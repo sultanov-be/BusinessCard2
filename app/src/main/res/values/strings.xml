@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BusinessCard2</string>
+    <string name="dental_surgeon">Dental surgeon</string>
+    <string name="dr_oleg_mayami">Dr. Oleg Mayami</string>
+    <string name="open_map">Open map</string>
+    <string name="adress">Shopping center Asia Mall\n1st floor</string>
+    <string name="our_location">Our Location</string>
+</resources>

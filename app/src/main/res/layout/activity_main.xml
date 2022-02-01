@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+
+        <ImageView
+            android:id="@+id/rect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:layout_constraintBaseline_toBottomOf="@id/top"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/rectpanel" />
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="100dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginBottom="19dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="@+id/rect"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rect"
+            app:srcCompat="@drawable/avatar" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="60dp"
+            android:text="@string/dr_oleg_mayami"
+            android:textColor="#FFFFFF"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/avatar"
+            app:layout_constraintTop_toTopOf="@+id/rect" />
+
+        <TextView
+            android:id="@+id/surgeon_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/dental_surgeon"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/avatar"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/other"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#E5E5E5">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="@+id/call_panel"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/dental_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/cherry_swash_bold"
+            android:text="Dental Clinic"
+            android:textColor="#322E78"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/logo"
+            app:layout_constraintStart_toEndOf="@+id/logo" />
+
+        <TextView
+            android:id="@+id/under_clinic_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Your friendly Dental Friend"
+            android:textColor="#322E78"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/logo"
+            app:layout_constraintTop_toBottomOf="@+id/dental_text" />
+
+        <ImageView
+            android:id="@+id/whats_panel"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/under_clinic_text"
+            app:srcCompat="@drawable/whatspanel" />
+
+        <ImageView
+            android:id="@+id/call_panel"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/whats_panel"
+            app:layout_constraintEnd_toStartOf="@+id/whats_panel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/whats_panel"
+            app:srcCompat="@drawable/callpanel" />
+
+        <ImageView
+            android:id="@+id/email_panel"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/whats_panel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/whats_panel"
+            app:layout_constraintTop_toTopOf="@+id/whats_panel"
+            app:srcCompat="@drawable/emailpanel" />
+
+        <ImageView
+            android:id="@+id/tg_panel"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/whats_panel"
+            app:srcCompat="@drawable/tgpanel" />
+
+        <ImageView
+            android:id="@+id/site_panel"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tg_panel"
+            app:layout_constraintEnd_toStartOf="@+id/tg_panel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/call_panel"
+            app:srcCompat="@drawable/websitepanel" />
+
+        <ImageView
+            android:id="@+id/contact_panel"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tg_panel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toEndOf="@+id/tg_panel"
+            app:layout_constraintTop_toTopOf="@+id/tg_panel"
+            app:srcCompat="@drawable/contactpanel" />
+
+        <TextView
+            android:id="@+id/location_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/our_location"
+            android:textColor="#003C68"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/site_panel"
+            app:layout_constraintTop_toBottomOf="@+id/site_panel" />
+
+        <TextView
+            android:id="@+id/adress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/adress"
+            android:textColor="#003C68"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/location_title"
+            app:layout_constraintTop_toBottomOf="@+id/location_title" />
+
+        <TextView
+            android:id="@+id/link_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/open_map"
+            android:textColor=" #924883"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/location_title"
+            app:layout_constraintTop_toBottomOf="@+id/adress_text" />
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            app:layout_constraintEnd_toEndOf="@+id/link_text"
+            app:layout_constraintStart_toStartOf="@+id/link_text"
+            app:layout_constraintTop_toBottomOf="@+id/link_text"
+            app:srcCompat="@drawable/line" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
